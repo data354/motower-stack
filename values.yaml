@@ -79,6 +79,7 @@ fluentbit:
 
 
 pg:
+  enabled: true
   architecture: standalone
   audit:
     clientMinMessages: error
