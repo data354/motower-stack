@@ -1099,7 +1099,7 @@ pg:
           adminPasswordKey: ""
           replicationPasswordKey: ""
           userPasswordKey: ""
-        username: "gpsuser"
+      username: "gpsuser"
       service:
         ports:
           postgresql: ""
