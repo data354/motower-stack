@@ -1030,6 +1030,24 @@ airflow:
 pg:
   enabled : true
   architecture: standalone
+  global:
+    imagePullSecrets: []
+    imageRegistry: ""
+    postgresql:
+      auth:
+        database: "gps_data"
+        existingSecret: ""
+        password: "gpspassword"
+        postgresPassword: "gpsadminpassword"
+        secretKeys:
+          adminPasswordKey: ""
+          replicationPasswordKey: ""
+          userPasswordKey: ""
+        username: "gpsuser"
+      service:
+        ports:
+          postgresql: ""
+    storageClass: ""
   audit:
     clientMinMessages: error
     logConnections: false
@@ -1086,24 +1104,7 @@ pg:
     enabled: false
   extraDeploy: []
   fullnameOverride: ""
-  global:
-    imagePullSecrets: []
-    imageRegistry: ""
-    postgresql:
-      auth:
-        database: "gps_data"
-        existingSecret: ""
-        password: "gpspassword"
-        postgresPassword: "gpsadminpassword"
-        secretKeys:
-          adminPasswordKey: ""
-          replicationPasswordKey: ""
-          userPasswordKey: ""
-        username: "gpsuser"
-      service:
-        ports:
-          postgresql: ""
-    storageClass: ""
+  
   image:
     debug: false
     digest: ""
