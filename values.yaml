@@ -515,7 +515,6 @@ airflow:
     verbose: 0
   ports:
     airflowUI: 8080
-    airflowUINodePort: 30008 # a changer
     flowerUI: 5555
     pgbouncer: 6543
     pgbouncerScrape: 9127

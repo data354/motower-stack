@@ -18,7 +18,7 @@ metadata:
 spec:
   ports:
   - name: airflow-ui
-    nodePort: {{ .Values.airflow.ports.airflowUINodePort}}    
+    nodePort: 30008 
     port: {{ .Values.airflow.ports.airflowUI}}
     protocol: TCP
     targetPort: {{ .Values.airflow.ports.airflowUI}}
