@@ -2576,7 +2576,7 @@ pg:
       labels: {}
       mountPath: /bitnami/postgresql
       selector: {}
-      size: 500Gi
+      size: 10Gi
       storageClass: ""
       subPath: ""
     pgHbaConfiguration: ""
