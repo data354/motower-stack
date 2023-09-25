@@ -1091,6 +1091,7 @@ pg:
     imageRegistry: ""
     postgresql:
       auth:
+        username: "gpsuser"
         database: "gps_data"
         existingSecret: ""
         password: "gpspassword"
@@ -1099,7 +1100,7 @@ pg:
           adminPasswordKey: ""
           replicationPasswordKey: ""
           userPasswordKey: ""
-        username: "gpsuser"
+        
       service:
         ports:
           postgresql: ""
