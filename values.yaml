@@ -1158,16 +1158,16 @@ pg:
     enablePostgresUser: true
     ## @param auth.postgresPassword Password for the "postgres" admin user. Ignored if `auth.existingSecret` is provided
     ##
-    postgresPassword: ""
+    postgresPassword: "gpsadminpassword"
     ## @param auth.username Name for a custom user to create
     ##
-    username: ""
+    username: "gpsuser"
     ## @param auth.password Password for the custom user to create. Ignored if `auth.existingSecret` is provided
     ##
-    password: ""
+    password: "gpspassword"
     ## @param auth.database Name for a custom database to create
     ##
-    database: ""
+    database: "gps_data"
     ## @param auth.replicationUsername Name of the replication user
     ##
     replicationUsername: repl_user
