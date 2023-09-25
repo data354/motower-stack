@@ -1040,11 +1040,11 @@ pg:
     pgAuditLog: ""
     pgAuditLogCatalog: "off"
   auth:
-    database: "gps_data"
+    database: ""
     enablePostgresUser: true
     existingSecret: ""
-    password: "gpspassword"
-    postgresPassword: "gpsadminpassword"
+    password: ""
+    postgresPassword: ""
     replicationPassword: ""
     replicationUsername: repl_user
     secretKeys:
@@ -1052,7 +1052,7 @@ pg:
       replicationPasswordKey: replication-password
       userPasswordKey: password
     usePasswordFiles: false
-    username: "gpsuser"
+    username: ""
   clusterDomain: cluster.local
   common:
     exampleValue: common-chart
@@ -1061,15 +1061,15 @@ pg:
       imageRegistry: ""
       postgresql:
         auth:
-          database: "gps_data"
+          database: ""
           existingSecret: ""
-          password: "gpspassword"
-          postgresPassword: "gpsadminpassword"
+          password: ""
+          postgresPassword: ""
           secretKeys:
             adminPasswordKey: ""
             replicationPasswordKey: ""
             userPasswordKey: ""
-          username: "gpsuser"
+          username: ""
         service:
           ports:
             postgresql: ""
@@ -1099,7 +1099,7 @@ pg:
           adminPasswordKey: ""
           replicationPasswordKey: ""
           userPasswordKey: ""
-      username: "gpsuser"
+        username: "gpsuser"
       service:
         ports:
           postgresql: ""
@@ -1480,6 +1480,7 @@ pg:
     resources:
       limits: {}
       requests: {}
+
 # values for pgadmin
 pgadmin:
   VolumePermissions:
