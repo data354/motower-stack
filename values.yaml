@@ -1091,7 +1091,6 @@ pg:
     imageRegistry: ""
     postgresql:
       auth:
-        username: "gpsuser"
         database: "gps_data"
         existingSecret: ""
         password: "gpspassword"
@@ -1100,7 +1099,7 @@ pg:
           adminPasswordKey: ""
           replicationPasswordKey: ""
           userPasswordKey: ""
-        
+        username: "gpsuser"
       service:
         ports:
           postgresql: ""
@@ -1278,7 +1277,7 @@ pg:
       labels: {}
       mountPath: /bitnami/postgresql
       selector: {}
-      size: 5Gi  # A changer
+      size: 10Gi
       storageClass: ""
       subPath: ""
     pgHbaConfiguration: ""
@@ -1481,7 +1480,6 @@ pg:
     resources:
       limits: {}
       requests: {}
-
 # values for pgadmin
 pgadmin:
   VolumePermissions:
